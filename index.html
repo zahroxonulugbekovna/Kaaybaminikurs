@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2215%22 fill=%22%23FF8FAB%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22%23231942%22%3EK%3C/text%3E%3C/svg%3E">
+<title>KAAYBA mini kursi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Eskiz chizish bo‘yicha onlayn mini kurs: 20 ta video dars, noldan boshlab, telefoningizdan. Ustoz Nazokat Ahmedova. 2-patok 1-dekabrda boshlanadi.">
+<meta property="og:title" content="Xayolingizdagi libosni qog‘ozga chizing · KAAYBA mini kursi">
+<meta property="og:description" content="20 ta video dars, Telegramda, 1 oylik kurs, darslar 2 oy saqlanadi. 2-patok 1-dekabrda boshlanadi.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap">
+<style>
+/* Layout: bright sketch-class page. White sheet, pastel paint swatches as section grounds,
+   a 10-colour wheel (the course's own "rang aylanmasi") as the recurring motif, rounded sticker cards. */
+:root{
+  --bg:#FFFFFF;
+  --ink:#231942;
+  --ink-2:#4A4166;
+  --muted:#7A7194;
+  --line:#E6E0F2;
+  --pink:#FF8FAB;
+  --pink-soft:#FFE3EA;
+  --lilac:#B8A4FF;
+  --lilac-soft:#EFEAFF;
+  --sun:#FFD166;
+  --sun-soft:#FFF3CF;
+  --mint:#8EDDBE;
+  --mint-soft:#DDF6EC;
+  --sky:#8CC8FF;
+  --f-display:"Unbounded","Arial Rounded MT Bold","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
+  --r:24px;
+  --wrap:1160px;
+  --wheel:conic-gradient(#FF8FAB,#FF6F59,#FFB347,#FFD166,#B5E48C,#8EDDBE,#8CC8FF,#7B8CFF,#B8A4FF,#F49AE6,#FF8FAB);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(64px,9vw,112px)}
+.sec-head{display:grid;gap:14px;max-width:720px;margin-bottom:clamp(32px,5vw,52px)}
+.sec-head h2{font-size:clamp(30px,4.4vw,50px)}
+.sec-head p{color:var(--ink-2);font-size:18px;max-width:58ch}
+.hand{font-family:var(--f-hand);font-weight:700;font-size:32px;line-height:1;color:var(--pink)}
+.mark{background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 90%,transparent 90%);padding:0 .08em}
+.mark.pink{background:linear-gradient(transparent 58%,var(--pink-soft) 58%,var(--pink-soft) 92%,transparent 92%)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:700 16px/1 var(--f-body);text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn.pink{background:var(--pink);color:var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--lilac);outline-offset:3px}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .dot{width:30px;height:30px;border-radius:50%;background:var(--wheel);box-shadow:inset 0 0 0 7px #fff, 0 0 0 1px var(--line)}
+.logo b{font:700 17px/1 var(--f-display);letter-spacing:.06em}
+.logo span{font:700 22px/1 var(--f-hand);color:var(--pink);margin-left:2px}
+.nav{display:flex;gap:26px;font-size:15px;font-weight:600}
+.nav a{text-decoration:none;color:var(--ink-2)}
+.nav a:hover{color:var(--ink)}
+.top .btn{min-height:44px;padding:0 20px;font-size:14.5px}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:420px){.top .btn{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(40px,6vw,72px) clamp(56px,8vw,96px);position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(36px,5vw,72px);align-items:center}
+.hero-copy{display:grid;gap:24px;min-width:0}
+.sticker{justify-self:start;display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:999px;background:var(--sun);font-weight:700;font-size:14.5px;transform:rotate(-2deg);box-shadow:0 3px 0 var(--ink)}
+.sticker i{width:10px;height:10px;border-radius:50%;background:var(--ink);animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero h1{font-size:clamp(38px,6vw,76px);line-height:1.04}
+.hero .lede{font-size:clamp(18px,1.7vw,20px);color:var(--ink-2);max-width:36ch}
+.hero .lede b{color:var(--ink)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{display:flex;align-items:baseline;gap:8px;padding:10px 16px;border-radius:16px;background:var(--lilac-soft);font-size:14.5px;color:var(--ink-2)}
+.chips li:nth-child(2){background:var(--mint-soft)}
+.chips li:nth-child(3){background:var(--sun-soft)}
+.chips li:nth-child(4){background:var(--pink-soft)}
+.chips b{font:600 20px/1 var(--f-display);color:var(--ink)}
+.hero-art{position:relative;margin:0;justify-self:center;width:min(100%,440px);padding:26px}
+.hero-art::before{content:"";position:absolute;inset:0;border-radius:50% 50% 32px 32px;background:var(--wheel);opacity:.9}
+.hero-art .photo{position:relative;border-radius:calc(50% - 6px) calc(50% - 6px) 18px 18px / 220px 220px 18px 18px;overflow:hidden;aspect-ratio:3/4;background:var(--lilac-soft);border:6px solid #fff}
+.hero-art .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.hero-art .note{position:absolute;left:-8px;bottom:-30px;background:#fff;border-radius:18px;padding:10px 16px;box-shadow:0 4px 0 var(--ink),0 0 0 2px var(--ink);transform:rotate(-3deg);display:grid;gap:0}
+.hero-art .note b{font:700 26px/1 var(--f-hand)}
+.hero-art .note small{font-size:13px;color:var(--muted)}
+.hero-art .mini{position:absolute;right:-14px;top:30px;width:30%;border:5px solid #fff;border-radius:12px;box-shadow:0 8px 24px rgba(35,25,66,.18);transform:rotate(7deg)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{width:min(100%,380px);margin-bottom:24px}.hero-art .mini{right:0}.hero-art .note{left:0}}
+
+/* who */
+.who{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.who article{border-radius:var(--r);padding:26px 22px 28px;display:grid;gap:10px;align-content:start;background:var(--pink-soft)}
+.who article:nth-child(2){background:var(--lilac-soft)}
+.who article:nth-child(3){background:var(--sun-soft)}
+.who article:nth-child(4){background:var(--mint-soft)}
+.who h3{font-size:19px;line-height:1.25}
+.who p{color:var(--ink-2);font-size:15.5px}
+.who .hand{color:var(--ink);font-size:24px}
+@media (max-width:980px){.who{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.who{grid-template-columns:1fr}}
+
+/* skills: colour-wheel block */
+.skills-box{background:var(--ink);color:#fff;border-radius:calc(var(--r) + 8px);padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:center;position:relative;overflow:hidden}
+.skills-box h2{font-size:clamp(28px,3.8vw,44px)}
+.skills-box .hand{color:var(--sun)}
+.skills-box .wheel{width:min(220px,50vw);aspect-ratio:1;border-radius:50%;background:var(--wheel);-webkit-mask:radial-gradient(circle,transparent 38%,#000 39%);mask:radial-gradient(circle,transparent 38%,#000 39%);margin-top:24px;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.skills{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.skills li{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.08);font-weight:600;font-size:16.5px;line-height:1.35}
+.skills li::before{content:"";flex:none;width:14px;height:14px;border-radius:50%;margin-top:4px;background:var(--c,var(--pink))}
+.skills li:nth-child(2){--c:var(--sun)}.skills li:nth-child(3){--c:var(--mint)}.skills li:nth-child(4){--c:var(--sky)}.skills li:nth-child(5){--c:var(--lilac)}.skills li:nth-child(6){--c:#FFB347}
+@media (max-width:860px){.skills-box{grid-template-columns:1fr}.skills-box .wheel{display:none}}
+@media (max-width:520px){.skills{grid-template-columns:1fr}}
+
+/* curriculum */
+.curr{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(28px,5vw,64px);align-items:start}
+.curr-side{position:sticky;top:100px;display:grid;gap:18px}
+.curr-side h2{font-size:clamp(30px,4vw,46px)}
+.curr-side p{color:var(--ink-2)}
+@media (max-width:900px){.curr{grid-template-columns:1fr}.curr-side{position:static}}
+.mods{display:grid;gap:12px}
+.mod{border-radius:var(--r);background:var(--c);overflow:hidden}
+.mod:nth-child(1){--c:var(--pink-soft)}.mod:nth-child(2){--c:var(--sun-soft)}.mod:nth-child(3){--c:var(--mint-soft)}.mod:nth-child(4){--c:var(--lilac-soft)}.mod:nth-child(5){--c:#E3F1FF}
+.mod summary{list-style:none;display:grid;grid-template-columns:auto minmax(0,1fr) 36px;align-items:center;gap:16px;padding:20px 22px;cursor:pointer}
+.mod summary::-webkit-details-marker{display:none}
+.mn{font:700 15px/1 var(--f-display);background:#fff;border-radius:999px;padding:9px 12px}
+.mh{display:grid;gap:2px;min-width:0}
+.mh b{font:600 clamp(17px,1.8vw,20px)/1.25 var(--f-display)}
+.mh small{font-size:14px;color:var(--muted);font-weight:600}
+.pm{width:36px;height:36px;border-radius:50%;background:#fff;position:relative}
+.pm::before,.pm::after{content:"";position:absolute;left:11px;right:11px;top:50%;height:2px;margin-top:-1px;background:var(--ink);transition:transform .2s}
+.pm::after{transform:rotate(90deg)}
+details[open] > summary .pm::after{transform:rotate(0)}
+.lessons{list-style:none;margin:0 14px 14px;padding:6px 16px;background:#fff;border-radius:18px}
+.lessons li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:16px;font-weight:500}
+.lessons li:last-child{border-bottom:0}
+.ln{color:var(--muted);font-variant-numeric:tabular-nums;font-size:14px;font-weight:700;padding-top:1px}
+.bonus-line{display:flex;align-items:center;gap:12px;padding:16px 22px;border-radius:var(--r);border:2px dashed var(--pink);font-weight:600}
+.bonus-line .hand{font-size:24px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0;counter-reset:s;position:relative}
+.steps li{counter-increment:s;display:grid;gap:10px;align-content:start;position:relative}
+.steps li::before{content:counter(s);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:700 20px/1 var(--f-display);background:var(--c);border:2px solid var(--ink);position:relative;z-index:1}
+.steps li:nth-child(1){--c:var(--pink)}.steps li:nth-child(2){--c:var(--sun)}.steps li:nth-child(3){--c:var(--mint)}.steps li:nth-child(4){--c:var(--lilac)}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:26px;left:60px;right:-10px;border-top:2px dashed var(--line)}
+.steps h3{font-size:18px;margin-top:6px}
+.steps p{color:var(--ink-2);font-size:15.5px}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}.steps li::after{display:none}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* gallery: pinned sketches, scrolls sideways inside its own track */
+.gal-sec{background:var(--sun-soft)}
+.gal{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 8px 30px;margin:0;scrollbar-width:thin}
+.gal figure{flex:0 0 clamp(200px,24vw,260px);scroll-snap-align:start;margin:0;background:#fff;padding:10px 10px 14px;border-radius:10px;box-shadow:0 10px 26px rgba(35,25,66,.12);transform:rotate(var(--t,-2deg));position:relative}
+.gal figure:nth-child(even){--t:2deg}
+.gal figure.wide{flex-basis:clamp(300px,36vw,390px)}
+.gal figure.wide img{aspect-ratio:4/3}
+.gal figure::before{content:"";position:absolute;top:-9px;left:50%;width:70px;height:20px;margin-left:-35px;background:rgba(184,164,255,.55);transform:rotate(-3deg)}
+.gal figure:nth-child(3n)::before{background:rgba(255,143,171,.5)}
+.gal img{aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:4px;background:var(--lilac-soft)}
+.gal figcaption{font:700 22px/1.1 var(--f-hand);text-align:center;margin-top:8px}
+.gal-hint{font:700 22px/1 var(--f-hand);color:var(--muted)}
+
+/* quotes */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.q{margin:0;display:grid;grid-template-rows:1fr auto;gap:16px}
+.q blockquote{margin:0;background:var(--c);border-radius:var(--r) var(--r) var(--r) 6px;padding:24px 24px 26px;font-size:17px;line-height:1.55;font-weight:500;position:relative}
+.q:nth-child(3n+1){--c:var(--pink-soft)}.q:nth-child(3n+2){--c:var(--lilac-soft)}.q:nth-child(3n){--c:var(--mint-soft)}
+.quotes{row-gap:32px}
+.q footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-left:6px;font-size:14px;color:var(--muted)}
+.q footer b{color:var(--ink);display:block;font-size:15.5px}
+.q details summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);list-style:none;border-bottom:2px solid var(--pink)}
+.q details summary::-webkit-details-marker{display:none}
+.q details img{margin-top:12px;border-radius:14px}
+@media (max-width:900px){.quotes{grid-template-columns:1fr}}
+
+/* teacher */
+.teach{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,72px);align-items:center}
+.teach figure{margin:0;position:relative;max-width:420px;z-index:0}
+.teach figure img{aspect-ratio:4/5;object-fit:cover;width:100%;object-position:50% 25%;border-radius:var(--r)}
+.teach figure::after{content:"";position:absolute;right:-18px;bottom:-18px;width:110px;aspect-ratio:1;border-radius:50%;background:var(--wheel);-webkit-mask:radial-gradient(circle,transparent 40%,#000 41%);mask:radial-gradient(circle,transparent 40%,#000 41%);z-index:-1}
+.teach-copy{display:grid;gap:18px}
+.teach-copy h2{font-size:clamp(28px,3.8vw,44px)}
+.teach-copy > p{color:var(--ink-2);font-size:18px;max-width:58ch}
+.facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.facts li{background:var(--lilac-soft);border-radius:18px;padding:16px;display:grid;gap:4px;font-size:14.5px;color:var(--ink-2);line-height:1.4}
+.facts li:nth-child(2){background:var(--sun-soft)}.facts li:nth-child(3){background:var(--pink-soft)}
+.facts b{font:600 22px/1 var(--f-display);color:var(--ink)}
+@media (max-width:860px){.teach{grid-template-columns:1fr}}
+@media (max-width:520px){.facts{grid-template-columns:1fr}}
+
+/* tariffs */
+.plans-sec{background:var(--lilac-soft)}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.tp{background:#fff;border-radius:var(--r);padding:clamp(24px,3vw,34px);display:grid;grid-template-rows:auto auto auto 1fr auto;gap:16px;border:2px solid transparent;position:relative}
+.tp h3{font-size:clamp(26px,2.6vw,32px)}
+.tp .for{color:var(--ink-2);font-size:15.5px}
+.tp .tag{justify-self:start;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--c)}
+.tp:nth-child(1){--c:var(--mint-soft)}.tp:nth-child(2){--c:var(--pink)}.tp:nth-child(3){--c:var(--sun)}
+.tp.main{border-color:var(--ink);box-shadow:0 8px 0 var(--ink);transform:translateY(-8px)}
+.tp .flag{position:absolute;top:-16px;right:20px;font:700 24px/1 var(--f-hand);background:var(--sun);padding:6px 14px;border-radius:12px;transform:rotate(4deg);border:2px solid var(--ink)}
+.tl2{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.tl2 li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:4px;padding:8px 0;font-size:15.5px;line-height:1.4;font-weight:500}
+.tl2 li::before{content:"";width:18px;height:18px;margin-top:1px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.6 2.5L13 6.5' fill='none' stroke='%23231942' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.tl2 li.no{color:#ABA4BF;font-weight:400}
+.tl2 li.no::before{background:#F1EEF7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M6 9h6' stroke='%23ABA4BF' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.tp .btn{width:100%}
+.price-note{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;color:var(--ink-2);font-size:16px}
+.price-note .hand{color:var(--ink);font-size:26px}
+@media (max-width:900px){.plans{grid-template-columns:1fr;max-width:520px}.tp.main{transform:none}}
+
+/* bonus */
+.bcards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.bcard{border-radius:var(--r);padding:clamp(24px,3.4vw,36px);display:grid;gap:12px;align-content:start;background:var(--c)}
+.bcard:nth-child(1){--c:var(--pink-soft)}.bcard:nth-child(2){--c:var(--sun-soft)}
+.bcard.has-cover{grid-template-columns:minmax(0,1fr) minmax(0,190px);align-items:center;gap:22px}
+.has-cover > div{grid-row:1;grid-column:1;display:grid;gap:12px;min-width:0}
+.has-cover .cover{grid-row:1;grid-column:2;width:100%;border-radius:10px;border:5px solid #fff;box-shadow:0 10px 24px rgba(35,25,66,.18);transform:rotate(3deg)}
+@media (max-width:480px),(min-width:721px) and (max-width:1100px){.bcard.has-cover{grid-template-columns:1fr;align-items:start}.has-cover .cover{grid-row:auto;grid-column:auto;max-width:200px;transform:rotate(2deg)}.has-cover > div{grid-row:auto;grid-column:auto}}
+.bcard h3{font-size:clamp(22px,2.4vw,28px)}
+.bcard p{color:var(--ink-2)}
+.bcard .hand{color:var(--ink)}
+.bcard .who-gets{justify-self:start;font-size:13.5px;font-weight:700;background:#fff;border-radius:999px;padding:6px 12px;color:var(--ink)}
+@media (max-width:720px){.bcards{grid-template-columns:1fr}}
+
+/* form */
+.apply-sec .box{background:var(--ink);color:#fff;border-radius:calc(var(--r) + 8px);padding:clamp(26px,5vw,60px);display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(28px,5vw,60px);align-items:center}
+.apply-copy{display:grid;gap:18px}
+.apply-copy h2{font-size:clamp(28px,4vw,46px)}
+.apply-copy p{color:#CFC8E6;font-size:17.5px;max-width:44ch}
+.apply-copy .sticker{color:var(--ink);box-shadow:none}
+.contacts{display:flex;flex-wrap:wrap;gap:10px}
+.contacts a,.contacts span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.25);text-decoration:none;font-size:15px;font-weight:600;color:#fff}
+.contacts a:hover{background:rgba(255,255,255,.1)}
+form{background:#fff;color:var(--ink);border-radius:var(--r);padding:clamp(22px,3.4vw,36px);display:grid;gap:16px}
+.field{display:grid;gap:6px}
+.field label,legend{padding:0;font-size:14px;font-weight:700;color:var(--ink-2)}
+input[type=text],input[type=tel]{width:100%;min-height:54px;padding:0 18px;border:2px solid var(--line);border-radius:16px;background:#FBFAFE;font:500 17px var(--f-body);color:var(--ink)}
+input[type=text]:focus,input[type=tel]:focus{border-color:var(--lilac);outline:none}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0}
+.opt span{display:flex;align-items:center;justify-content:center;min-height:48px;padding:8px 12px;border-radius:14px;border:2px solid var(--line);background:#FBFAFE;font-size:15px;font-weight:600;cursor:pointer;text-align:center}
+.opt input:checked + span{border-color:var(--ink);background:var(--pink)}
+.opt input:focus-visible + span{outline:3px solid var(--lilac);outline-offset:2px}
+.err{color:#C2264B;font-size:14px;font-weight:600;min-height:1em}
+.fine{font-size:13px;color:var(--muted)}
+form .btn{width:100%}
+.done{display:grid;gap:12px}
+.done h3{font-size:28px}
+.done p{color:var(--ink-2)}
+@media (max-width:860px){.apply-sec .box{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:820px;display:grid;gap:10px}
+.faq details{background:#F8F6FD;border-radius:20px}
+.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 36px;gap:14px;align-items:center;padding:18px 18px 18px 22px;font:600 17.5px/1.35 var(--f-body)}
+.faq summary::-webkit-details-marker{display:none}
+.faq details p{padding:0 22px 20px;color:var(--ink-2);max-width:64ch}
+
+/* footer */
+.foot{background:var(--ink);color:#CFC8E6;padding-block:44px calc(44px + 72px)}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:20px 48px;justify-content:space-between;align-items:center}
+.foot .logo b{color:#fff}
+.foot p{font-size:14px}
+@media (min-width:861px){.foot{padding-bottom:44px}}
+
+/* mobile sticky cta */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;gap:10px;align-items:center;justify-content:space-between;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(35,25,66,.08);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.mbar small{display:block;font-size:12.5px;color:var(--muted);font-weight:600}
+.mbar b{font:600 16px/1.2 var(--f-display)}
+.mbar .btn{min-height:46px;padding:0 20px;font-size:14.5px}
+@media (max-width:860px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="KAAYBA mini kursi"><i class="dot" aria-hidden="true"></i><b>KAAYBA</b><span>mini kurs</span></a>
+    <nav class="nav" aria-label="Bo‘limlar">
+      <a href="#dastur">Darslar</a>
+      <a href="#ishlar">Ishlar</a>
+      <a href="#tariflar">Tariflar</a>
+      <a href="#savollar">Savollar</a>
+    </nav>
+    <a class="btn pink" href="#tariflar">Tarif tanlash</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="sticker"><i aria-hidden="true"></i>2-patok 1-dekabrda boshlanadi</p>
+      <h1>Xayolingizdagi libosni <span class="mark">qog‘ozga</span> chizing</h1>
+      <p class="lede">Eskiz chizish bo‘yicha mini kurs: <b>20 ta professional yozib olingan dars</b>, noldan boshlab tayyor eskizgacha.</p>
+      <div class="cta-row">
+        <a class="btn pink" href="#tariflar">Tarifni tanlash</a>
+        <a class="btn ghost" href="#dastur">Darslarni ko‘rish</a>
+      </div>
+      <ul class="chips">
+        <li><b>20</b>video dars</li>
+        <li><b>1 oy</b>kurs davom etadi</li>
+        <li><b>2 oy</b>darslar saqlanadi</li>
+        <li><b>0</b>tajriba shart emas</li>
+      </ul>
+    </div>
+    <figure class="hero-art">
+      <div class="photo"><img src="img/hero.jpg" alt="Kurs muallifi Nazokat Ahmedova oq kostyum va oq beretda" width="760" height="1140" fetchpriority="high"></div>
+      <figcaption class="note"><b>Nazokat Ahmedova</b><small>ustozingiz, 2017-yildan</small></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="kimlar" style="padding-top:clamp(40px,6vw,72px)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="hand">bu kurs sizga mos, agar…</p>
+      <h2>Chizishni <span class="mark pink">o‘zingiz uchun</span> o‘rganmoqchi bo‘lsangiz</h2>
+      <p>Kasb yoki diplom shart emas. Moda va liboslarni yaxshi ko‘radigan har bir qiz uchun.</p>
+    </div>
+    <div class="who">
+      <article><p class="hand">noldan</p><h3>Hech qachon chizmagan bo‘lsangiz</h3><p>Oddiy shakllardan boshlaymiz. Iqtidor emas, qadam-baqadam mashq kerak.</p></article>
+      <article><p class="hand">moda</p><h3>Liboslarga qiziqsangiz</h3><p>Moda, rang va uslublarni o‘z qo‘lingiz bilan chizib ko‘rasiz.</p></article>
+      <article><p class="hand">g‘oya</p><h3>Xayolingizdagi libosni ko‘rsatolmasangiz</h3><p>Tikuvchiga so‘z bilan emas, chizib tushuntirasiz.</p></article>
+      <article><p class="hand">xobbi</p><h3>Yangi ijodiy mashg‘ulot izlasangiz</h3><p>Kuniga 20–30 daqiqa o‘zingiz uchun, xotirjam va chiroyli ish.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="natija">
+  <div class="wrap">
+    <div class="skills-box">
+      <div>
+        <p class="hand">kurs oxirida</p>
+        <h2>Nimalarni uddalaysiz</h2>
+        <div class="wheel" aria-hidden="true"></div>
+      </div>
+      <ul class="skills">
+        <li>Figurani to‘g‘ri proporsiyada chizish</li>
+        <li>Harakatdagi figura va pozalar</li>
+        <li>Siyoh va rang bilan siluet berish</li>
+        <li>Teri ranglari va shifon matoni ko‘rsatish</li>
+        <li>Fashion portret chizish</li>
+        <li>Kompozitsiya tuzish va uslub tanlash</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="dastur">
+  <div class="wrap curr">
+    <div class="curr-side">
+      <p class="hand">kurs dasturi</p>
+      <h2>Oddiy shakldan tayyor eskizgacha</h2>
+      <p>Har bir dars oldingisining ustiga quriladi: avval figura, keyin siluet, rang, mato va oxirida o‘z uslubingizdagi kompozitsiya.</p>
+    </div>
+    <div class="mods">
+<details class="mod" open>
+<summary><span class="mn">01</span><span class="mh"><b>Asoslar</b><small>Kirish + 4 dars</small></span><span class="pm" aria-hidden="true"></span></summary>
+<ol class="lessons">
+<li><span class="ln">00</span><span>Kirish: Nazokat Ahmedova bilan tanishuv</span></li>
+<li><span class="ln">01</span><span>Shakllar bilan ishlash</span></li>
+<li><span class="ln">02</span><span>Instrumentlar</span></li>
+<li><span class="ln">03</span><span>Shakllar</span></li>
+<li><span class="ln">04</span><span>Tananing skelet shakli</span></li>
+</ol>
+</details>
+<details class="mod">
+<summary><span class="mn">02</span><span class="mh"><b>Figura va poza</b><small>2 dars</small></span><span class="pm" aria-hidden="true"></span></summary>
+<ol class="lessons">
+<li><span class="ln">05</span><span>Asosiy frontal poza</span></li>
+<li><span class="ln">06</span><span>Harakatdagi figura</span></li>
+</ol>
+</details>
+<details class="mod">
+<summary><span class="mn">03</span><span class="mh"><b>Siluet va fantaziya</b><small>3 dars</small></span><span class="pm" aria-hidden="true"></span></summary>
+<ol class="lessons">
+<li><span class="ln">07</span><span>Siyoh yordamida siluet</span></li>
+<li><span class="ln">08</span><span>Siluet</span></li>
+<li><span class="ln">09</span><span>Fantaziyani oshirish</span></li>
+</ol>
+</details>
+<details class="mod">
+<summary><span class="mn">04</span><span class="mh"><b>Rang va mato</b><small>5 dars</small></span><span class="pm" aria-hidden="true"></span></summary>
+<ol class="lessons">
+<li><span class="ln">10</span><span>10 ta rang aylanmasi</span></li>
+<li><span class="ln">11</span><span>9 ta teri ranglari</span></li>
+<li><span class="ln">12</span><span>8 ta shifon ko‘ylak</span></li>
+<li><span class="ln">13</span><span>Ranglar, 1-qism</span></li>
+<li><span class="ln">14</span><span>Ranglar bilan ishlash, 2-qism</span></li>
+</ol>
+</details>
+<details class="mod">
+<summary><span class="mn">05</span><span class="mh"><b>Portret, kompozitsiya va uslub</b><small>6 dars</small></span><span class="pm" aria-hidden="true"></span></summary>
+<ol class="lessons">
+<li><span class="ln">15</span><span>Fashion portret</span></li>
+<li><span class="ln">16</span><span>12 ta kompozitsiya</span></li>
+<li><span class="ln">17</span><span>Stillar haqida (5 ta makro stil)</span></li>
+<li><span class="ln">18</span><span>Libos uslublari</span></li>
+<li><span class="ln">19</span><span>To‘g‘ri va noto‘g‘ri moda</span></li>
+<li><span class="ln">20</span><span>Yakuniy dars</span></li>
+</ol>
+</details>
+<p class="bonus-line"><span class="hand">+ bonus</span>Fashion illustratsiya sketchbook (PDF)</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="usul" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="hand">qanday o‘qiysiz</p>
+      <h2>Hammasi Telegramda, telefoningizda</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Ariza qoldirasiz</h3><p>Admin bog‘lanib, tariflar narxini yuboradi va to‘lovni qabul qiladi.</p></li>
+      <li><h3>Yopiq guruhga qo‘shilasiz</h3><p>Kurs 1 oy davom etadi. Darslar yopiq Telegram guruhda 2 oy saqlanadi.</p></li>
+      <li><h3>Qulay vaqtda ko‘rasiz</h3><p>Telefon, planshet yoki kompyuterdan. Istalgan darsni qayta ko‘rish mumkin.</p></li>
+      <li><h3>Vazifa yuborasiz</h3><p>Pro tarifida kurator, Premiumda Nazokat Ahmedovaning o‘zi ishingizni tekshiradi.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec gal-sec" id="ishlar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="hand">o‘quvchilar ishlari</p>
+      <h2>KAAYBA o‘quvchilari chizgan eskizlar</h2>
+      <p>Nazokat Ahmedova o‘quvchilarining haqiqiy ishlari: qalam, siyoh va akvarel bilan qog‘ozda chizilgan.</p>
+    </div>
+    <div class="gal" tabindex="0" aria-label="O‘quvchilar ishlari, yon tomonga suring">
+      <figure><img src="img/n1.jpg" alt="O‘quvchi eskizi: sariq va qora liboslardagi uch model" width="825" height="1132" loading="lazy"><figcaption>sariq va qora</figcaption></figure>
+      <figure class="wide"><img src="img/n7.jpg" alt="O‘quvchi eskizi: printli kurtka va shimlardagi uch model" width="825" height="613" loading="lazy"><figcaption>printli obrazlar</figcaption></figure>
+      <figure><img src="img/n4.jpg" alt="O‘quvchi eskizi: yashil palto va sariq kostyumdagi ikki model, sketchbookda" width="825" height="1100" loading="lazy"><figcaption>yashil palto</figcaption></figure>
+      <figure><img src="img/n2.jpg" alt="O‘quvchi eskizi: charm kurtka va katak shimdagi model, markerlar yonida" width="825" height="1101" loading="lazy"><figcaption>marker bilan</figcaption></figure>
+      <figure><img src="img/n5.jpg" alt="O‘quvchi eskizi: sariq palto, qora libos va sariq kostyumdagi uch model, akvarel" width="414" height="638" loading="lazy"><figcaption>akvarel uchlik</figcaption></figure>
+      <figure><img src="img/n8.jpg" alt="O‘quvchi eskizi: qora-oq grafik kostyumlardagi uch model" width="388" height="470" loading="lazy"><figcaption>qora-oq grafika</figcaption></figure>
+      <figure class="wide"><img src="img/n3.jpg" alt="O‘quvchi mashqi: qalamda chizilgan uchta figura skeleti" width="479" height="334" loading="lazy"><figcaption>figura skeleti</figcaption></figure>
+      <figure><img src="img/n9.jpg" alt="O‘quvchi eskizi: qizil yengli kurtka va grafik yubkadagi ikki model" width="248" height="360" loading="lazy"><figcaption>qizil yeng</figcaption></figure>
+    </div>
+    <p class="gal-hint">← yon tomonga suring →</p>
+  </div>
+</section>
+
+<section class="sec" id="fikrlar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="hand">o‘quvchilar fikri</p>
+      <h2>Nazokat Ahmedova o‘quvchilari nima deydi</h2>
+    </div>
+    <div class="quotes">
+      <figure class="q">
+        <blockquote>Men o‘zimda juda katta o‘zgarish sezyapman, chunki rassomchilikdan umuman yiroq edim. Hatto bolalarim ham chizayotganimni ko‘rib, xursand bo‘lib kuzatyaptilar.</blockquote>
+        <footer><div><b>Manzura Hakimova</b>onlayn kurs o‘quvchisi</div>
+          <details><summary>Asl xabar</summary><img src="img/t4.jpg" alt="Manzura Hakimovaning Telegramdagi asl xabari" width="424" height="490" loading="lazy"></details></footer>
+      </figure>
+      <figure class="q">
+        <blockquote>Kursni tanlaganimdan umuman afsuslanmayman. Har bir darsni maroq bilan qayta-qayta ko‘rib chizaman. Eng asosiysi, umuman zerikmayman.</blockquote>
+        <footer><div><b>Farrux</b>onlayn kurs o‘quvchisi</div>
+          <details><summary>Asl xabar</summary><img src="img/t5.jpg" alt="Farruxning Telegramdagi asl xabari" width="542" height="444" loading="lazy"></details></footer>
+      </figure>
+      <figure class="q">
+        <blockquote>Mazza qilib dars qilyapman, videolar juda ham sifatli. Bola bilan sal qiyin bo‘lyapti, lekin baribir orqaga chekinish yo‘q.</blockquote>
+        <footer><div><b>Manzura Hakimova</b>guruh chatidan</div>
+          <details><summary>Asl xabar</summary><img src="img/t6.jpg" alt="Kurs guruhidagi yozishma: Manzura Hakimova va Nazokat Ahmedova" width="484" height="843" loading="lazy"></details></footer>
+      </figure>
+      <figure class="q">
+        <blockquote>Men bu darsdan keyin hayolimga kelgan eskizni qog‘ozga tushirib olaman, unga yana g‘oyalar qo‘shimcha qilaman.</blockquote>
+        <footer><div><b>Hulkar Nuraliyeva</b>onlayn kurs o‘quvchisi</div>
+          <details><summary>Asl xabar</summary><img src="img/t1.jpg" alt="Hulkar Nuraliyevaning asl xabari" width="832" height="1100" loading="lazy"></details></footer>
+      </figure>
+      <figure class="q">
+        <blockquote>Albatta yoqdi menga. Arziydi. Hozir ishlagan eskizlarim bilan oldingilarini solishtirsam, osmon bilan yercha farqi bor ekan.</blockquote>
+        <footer><div><b>O‘quvchi</b>onlayn kurs o‘quvchisi</div>
+          <details><summary>Asl xabar</summary><img src="img/t3.jpg" alt="O‘quvchining Telegramdagi asl xabari" width="867" height="1100" loading="lazy"></details></footer>
+      </figure>
+      <figure class="q">
+        <blockquote>Video darslik ham tushunarli va qulay bo‘ldi.</blockquote>
+        <footer><div><b>Zuhra</b>onlayn kurs o‘quvchisi</div>
+          <details><summary>Asl xabar</summary><img src="img/t2.jpg" alt="Zuhraning Telegramdagi asl xabari" width="710" height="1100" loading="lazy"></details></footer>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ustoz" style="padding-top:0">
+  <div class="wrap teach">
+    <figure>
+      <img src="img/ustoz.jpg" alt="Nazokat Ahmedova krem kostyumda qog‘oz o‘qiyapti" width="760" height="1351" loading="lazy">
+    </figure>
+    <div class="teach-copy">
+      <p class="hand">ustozingiz</p>
+      <h2>Nazokat Ahmedova</h2>
+      <p>KAAYBA Fashion School asoschisi va fashion illustratsiya bo‘yicha muallifiy kitob egasi. 2017-yildan beri qizlarga eskiz chizishni o‘rgatib keladi. Bu mini kursda ko‘p yillik tajribasidan eng kerakli qismini oldi: chizishni noldan boshlaganlar ham tushunadigan 20 ta dars.</p>
+      <ul class="facts">
+        <li><b>2017</b>Xorazmda “Xon qizlari Fashion Studio”</li>
+        <li><b>2021</b>Toshkentda KAAYBA Fashion School</li>
+        <li><b>2026</b>Havaskorlar uchun mini kurs</li>
+      </ul>
+      <a class="btn ghost" href="https://instagram.com/nazokatahmedova" target="_blank" rel="noopener" style="justify-self:start">Instagram: @nazokatahmedova</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec plans-sec" id="tariflar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="hand">tariflar</p>
+      <h2>O‘zingizga mos tarifni tanlang</h2>
+      <p>Uchala tarifda ham 20 ta dars bir xil. Farqi: ishingizni kim tekshiradi va qanday bonuslar bor.</p>
+    </div>
+    <div class="plans">
+      <article class="tp">
+        <p class="tag">Mustaqil</p>
+        <h3>Standart</h3>
+        <p class="for">O‘zi o‘rganishni yoqtiradiganlar uchun, qayta aloqasiz.</p>
+        <ul class="tl2">
+          <li>20 ta video dars + kirish darsi</li>
+          <li>Darslarga 2 oy kirish</li>
+          <li class="no">Telegram guruh chati</li>
+          <li class="no">Ishlarni tekshirish</li>
+          <li>Bonus: sketchbook (PDF)</li>
+          <li class="no">Jonli Zoom efir</li>
+        </ul>
+        <a class="btn ghost" href="#yozilish" data-plan="Standart">Narxini bilish</a>
+      </article>
+      <article class="tp main">
+        <span class="flag">ko‘p tanlanadi!</span>
+        <p class="tag">Kurator bilan</p>
+        <h3>Pro</h3>
+        <p class="for">Xatolarini bilib, tezroq o‘sishni xohlaganlar uchun.</p>
+        <ul class="tl2">
+          <li>20 ta video dars + kirish darsi</li>
+          <li>Darslarga 2 oy kirish</li>
+          <li>Telegram guruh chati</li>
+          <li>Kurator ishlarni guruhda tekshiradi</li>
+          <li>Bonus: sketchbook (PDF)</li>
+          <li>Bonus: kurs boshida ustoz bilan jonli Zoom efir</li>
+        </ul>
+        <a class="btn pink" href="#yozilish" data-plan="Pro">Narxini bilish</a>
+      </article>
+      <article class="tp">
+        <p class="tag">Ustoz bilan</p>
+        <h3>Premium</h3>
+        <p class="for">Ustozning o‘zidan fikr olishni xohlaganlar uchun.</p>
+        <ul class="tl2">
+          <li>20 ta video dars + kirish darsi</li>
+          <li>Darslarga 2 oy kirish</li>
+          <li>Telegram guruh chati</li>
+          <li><span>Ishlarni <b>shaxsan Nazokat Ahmedova</b> tekshirib, feedback beradi</span></li>
+          <li>Bonus: sketchbook (PDF)</li>
+          <li>Bonus: kurs boshida ustoz bilan jonli Zoom efir</li>
+        </ul>
+        <a class="btn" href="#yozilish" data-plan="Premium">Narxini bilish</a>
+      </article>
+    </div>
+    <p class="price-note"><span class="hand">narxlar qayerda?</span>Ariza qoldiring, admin siz bilan bog‘lanib tariflar narxini yuboradi.</p>
+  </div>
+</section>
+
+<section class="sec" id="bonus">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="hand">bonuslar</p>
+      <h2>Darslardan tashqari</h2>
+    </div>
+    <div class="bcards">
+      <article class="bcard has-cover"><img class="cover" src="img/sketchbook.jpg" alt="KAAYBA fashion illustratsiya sketchbooki" width="640" height="789" loading="lazy"><div><p class="hand">PDF</p><h3>Fashion illustratsiya sketchbook</h3><p>Nazokat Ahmedovaning sketchbooki. Yuklab olib, chop etib, ustida mashq qilasiz. Darslarda o‘rganganingizni darhol qo‘llaysiz.</p><p class="who-gets">Barcha tariflarda</p></div></article>
+      <article class="bcard"><p class="hand">jonli efir</p><h3>Nazokat Ahmedova bilan Zoom</h3><p>Kurs boshida ustoz bilan jonli uchrashuv: savollaringizni to‘g‘ridan-to‘g‘ri berasiz.</p><p class="who-gets">Pro va Premium tariflarida</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="apply-sec" id="yozilish">
+  <div class="wrap">
+    <div class="box">
+      <div class="apply-copy">
+        <p class="sticker"><i aria-hidden="true"></i>2-patok 1-dekabrda boshlanadi</p>
+        <h2>Birinchi eskizingizni bugun boshlang</h2>
+        <p>Ism va raqamingizni qoldiring. Admin siz bilan bog‘lanib, tariflar narxini yuboradi va yozilishda yordam beradi.</p>
+        <div class="contacts">
+          <a href="https://t.me/nazokatahmedova" target="_blank" rel="noopener">Telegram: @nazokatahmedova</a>
+          <span>+998 97 790 87 00</span>
+        </div>
+      </div>
+      <form id="lead" novalidate>
+        <div id="form-body" style="display:grid;gap:16px">
+          <div class="field"><label for="f-name">Ismingiz</label><input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Masalan, Madina" required></div>
+          <div class="field"><label for="f-phone">Telefon raqamingiz</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 __ ___ __ __" required></div>
+          <fieldset>
+            <legend>Qaysi tarif qiziqtiradi?</legend>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="plan" id="p-standart" value="Standart"><span>Standart</span></label>
+              <label class="opt"><input type="radio" name="plan" id="p-pro" value="Pro"><span>Pro</span></label>
+              <label class="opt"><input type="radio" name="plan" id="p-premium" value="Premium"><span>Premium</span></label>
+              <label class="opt"><input type="radio" name="plan" id="p-none" value="Hali bilmayman"><span>Hali bilmayman</span></label>
+            </div>
+          </fieldset>
+          <p class="err" id="f-err" role="alert"></p>
+          <button class="btn pink" type="submit" id="f-submit">Narxlarni olish</button>
+          <p class="fine">Ma’lumotlaringiz faqat siz bilan bog‘lanish uchun ishlatiladi.</p>
+        </div>
+        <div class="done" id="form-done" hidden>
+          <p class="hand">ariza qabul qilindi!</p>
+          <h3>Rahmat, <span id="d-name"></span>!</h3>
+          <p>Admin tez orada siz bilan bog‘lanib, tariflar narxini yuboradi. Kutishni xohlamasangiz, Telegramda hozir yozishingiz mumkin.</p>
+          <a class="btn" href="https://t.me/nazokatahmedova" target="_blank" rel="noopener">Telegramda yozish</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="savollar">
+  <div class="wrap">
+    <div class="sec-head"><p class="hand">savollar</p><h2>Ko‘p so‘raladigan savollar</h2></div>
+    <div class="faq">
+      <details><summary>Umuman chizishni bilmayman. Uddalay olamanmi?<span class="pm" aria-hidden="true"></span></summary><p>Ha. Kurs oddiy shakllardan boshlanadi, keyin tana, poza va siluetga o‘tiladi. Har bir qadam ko‘rsatib tushuntiriladi.</p></details>
+      <details><summary>Qanday o‘quv qurollari kerak?<span class="pm" aria-hidden="true"></span></summary><p>Boshlash uchun oddiy qog‘oz va qalam yetarli. Kerakli o‘quv qurollari 2-darsda («Instrumentlar») batafsil tushuntiriladi.</p></details>
+      <details><summary>Telefondan ko‘rsa bo‘ladimi?<span class="pm" aria-hidden="true"></span></summary><p>Ha. Darslar yopiq Telegram guruhda, ularni telefon, planshet yoki kompyuterdan ko‘rasiz.</p></details>
+      <details><summary>Darslar qachon boshlanadi va qancha vaqt ochiq turadi?<span class="pm" aria-hidden="true"></span></summary><p>2-patok 1-dekabrda boshlanadi. To‘lovdan keyin yopiq Telegram guruhga qo‘shilasiz, kurs 1 oy davom etadi, darslar esa 2 oy davomida saqlanadi. Keyingi qabul sanalari Instagram va Telegramda e’lon qilinadi.</p></details>
+      <details><summary>Ishimni kim tekshiradi?<span class="pm" aria-hidden="true"></span></summary><p>Pro tarifida kurator ishlaringizni Telegram guruhda tekshiradi. Premium tarifida ishlaringizni shaxsan Nazokat Ahmedova tekshirib, feedback beradi. Standart tarif mustaqil o‘rganish uchun, unda tekshiruv yo‘q.</p></details>
+      <details><summary>Narxi qancha va to‘lov qanday qilinadi?<span class="pm" aria-hidden="true"></span></summary><p>Ariza qoldiring, admin siz bilan bog‘lanib tariflar narxini yuboradi va to‘lovni qabul qiladi.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="logo" href="#top"><i class="dot" aria-hidden="true"></i><b>KAAYBA</b><span>mini kurs</span></a>
+    <p>+998 97 790 87 00 · Telegram va Instagram: @nazokatahmedova</p>
+    <p>© 2026 KAAYBA Fashion School</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <div><small>Mini kurs · 1-dekabrdan</small><b>Eskiz chizish</b></div>
+  <a class="btn pink" href="#tariflar">Tarif tanlash</a>
+</div>
+
+<script>
+/* ===== Sozlamalar =====
+   leadEndpoint: arizalar boradigan manzil (Netlify funksiyasi Telegram + Google Sheets'ga yuboradi).
+   pixelId: Meta Pixel ID. To‘ldirilsa PageView, ViewContent (tariflar), InitiateCheckout (tarif tugmasi), Lead (ariza) yuboriladi. */
+var CONFIG = { leadEndpoint: "/api/lead", pixelId: "" };
+(function(){
+  if (CONFIG.pixelId) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.pixelId); fbq('track', 'PageView');
+  }
+  var track = function(ev, p){ if (window.fbq) fbq('track', ev, p || {}); };
+
+  var utm = '';
+  try {
+    var q = new URLSearchParams(location.search), parts = [];
+    ['utm_source','utm_campaign','utm_content'].forEach(function(k){ if (q.get(k)) parts.push(k.replace('utm_','') + '=' + q.get(k)); });
+    utm = parts.join(', ');
+    if (utm) sessionStorage.setItem('utm', utm); else utm = sessionStorage.getItem('utm') || '';
+  } catch(e) {}
+
+  var plans = document.getElementById('tariflar'), seen = false;
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es, o){ es.forEach(function(x){ if (x.isIntersecting && !seen) { seen = true; track('ViewContent', { content_name: 'Tariflar' }); o.disconnect(); } }); }, { threshold: .3 }).observe(plans);
+  }
+
+  document.querySelectorAll('[data-plan]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var p = a.getAttribute('data-plan');
+      var r = document.querySelector('input[name=plan][value="' + p + '"]'); if (r) r.checked = true;
+      track('InitiateCheckout', { content_name: p });
+    });
+  });
+
+  var form = document.getElementById('lead');
+  var err = document.getElementById('f-err');
+  var phone = document.getElementById('f-phone');
+  phone.addEventListener('focus', function(){ if(!phone.value) phone.value = '+998 '; });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('f-name').value.trim();
+    var digits = phone.value.replace(/\D/g,'');
+    if (digits.indexOf('998998') === 0) digits = digits.slice(3);
+    if (digits.length === 9) digits = '998' + digits;
+    if (!name) { err.textContent = 'Ismingizni yozing.'; document.getElementById('f-name').focus(); return; }
+    if (digits.length < 12) { err.textContent = 'Telefon raqamini to‘liq yozing, masalan +998 90 123 45 67.'; phone.focus(); return; }
+    err.textContent = '';
+    var planEl = form.querySelector('input[name=plan]:checked');
+    var data = { name: name, phone: '+' + digits, goal: 'Mini kurs (2-patok)', format: planEl ? planEl.value : 'Tanlanmagan', utm: utm, source: 'kaayba-mini-kurs', page: location.href };
+    var btn = document.getElementById('f-submit'); btn.disabled = true; btn.textContent = 'Yuborilmoqda…';
+    var finish = function(){
+      track('Lead', { content_name: data.format });
+      document.getElementById('d-name').textContent = name;
+      document.getElementById('form-body').hidden = true;
+      document.getElementById('form-done').hidden = false;
+    };
+    if (!CONFIG.leadEndpoint) { finish(); return; }
+    fetch(CONFIG.leadEndpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) })
+      .then(function(r){ if(!r.ok) throw new Error(); finish(); })
+      .catch(function(){ btn.disabled = false; btn.textContent = 'Narxlarni olish'; err.textContent = 'Ariza yuborilmadi. Internetni tekshirib qayta urinib ko‘ring yoki Telegramda yozing: @nazokatahmedova'; });
+  });
+})();
+</script>
+</body>
+</html>
